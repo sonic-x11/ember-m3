@@ -1,0 +1,216 @@
+@import 'main.scss';
+* {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+h2, .block-heading {
+    font-size: 1.62671rem;
+}
+
+h1, h2, .block-heading {
+    padding: 0;
+    margin: 1.45rem 0 1.45rem;
+    color: inherit;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    line-height: 1.1;
+}
+
+h2 {
+    margin: 0 !important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+body{
+    font: 112.5%/1.45em Roboto,sans-serif;
+    background-color: #E5E8EC;
+    max-width: 100vw !important;
+    min-height: 100vh;
+    font-family: Roboto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0px !important;
+    color: rgba(0,0,0,.8);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    max-height: 60vh;
+    vertical-align: middle;
+}
+
+video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+}
+
+hide-scroll {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scroll::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.app-bar {
+    position: absolute;
+}
+
+header {
+    width: 100vw !important;
+}
+
+.nav-drawer-link.active {
+    background-color: grey;
+}
+
+.nav-drawer-link {
+    a {
+        text-decoration: none !important;
+        color: inherit;
+    }
+}
+
+.mdc-drawer__content > md-list {
+    --md-list-container-color: white;
+
+    a {
+        display: block;
+    }
+}
+
+.footer {
+    background-color: rgb(14, 77, 159);
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 0px;
+    margin-top: auto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    a {
+        color: #FFFFFF;
+    }
+}
+
+
+md-filled-button {
+    --md-filled-button-container-color: #126cf2;
+    --md-sys-color-on-primary: #FFFFFF;
+}
+  
+md-outlined-button {
+    --md-sys-color-primary: white;
+    --md-sys-color-outline: #126cf2;
+}
+  
+md-outlined-button.active {
+    --md-sys-color-primary: #00337e ;
+    background-color: white;
+}
+
+md-dialog {
+    --md-dialog-container-color: white;
+    --md-dialog-supporting-text-color: rgba(0, 0, 0, 0.54);	
+    --md-sys-color-on-surface: black;
+    --md-sys-typescale-body-medium: system-ui 16px/24px;
+    --md-sys-typescale-headline-small: system-ui 24px/32px;
+    --md-dialog-container-shape: 8px;
+    --md-filled-text-field-focus-input-text-color: black;
+    --md-filled-text-field-container-color: white;
+    --md-filled-text-field-focus-container-color: white;
+    --md-filled-text-field-hover-container-color: white;
+    --md-filled-text-field-focus-active-indicator-color: #303f9f;
+    --md-filled-text-field-focus-label-text-color: rgba(0, 0, 0, 0.54);;
+    --md-filled-text-field-focus-supporting-text-color: yellow;
+}
+
+.contacts {
+    min-width: 32vw;
+}
+
+@media (max-width: 840px) {
+    .contacts {
+        min-width: 90vw;
+    }
+}
+
+.contacts [slot="header"] {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.contacts .headline {
+    flex: 1;
+}
+
+.contact-content, .contact-row {
+    display: flex;
+    gap: 8px;
+}
+
+.contact-content {
+    flex-direction: column;
+}
+
+.contact-row > * {
+    flex: 1;
+}
+
+.md-button {
+    text-transform: capitalize!important;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+}
+
+.main-content-title {
+    color:#FFFFFF;
+    font-size:54px;
+    font-weight:300;
+    line-height:52px;
+}
+
+.icon-title-img {
+    fill:white;
+    width:72px;
+    height:72px;
+    padding:12px;
+    background-color:#073C7F;
+    border-radius:50px;
+}
+
+.active-rail-subchapter {
+    color: #126cf2 !important
+}
+
+.block-image > img {
+    max-height: unset;
+}
+md-icon {
+    font-family: 'Material Symbols Outlined' !important;
+}

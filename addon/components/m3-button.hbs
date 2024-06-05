@@ -1,0 +1,10 @@
+
+{{#if @iconButton}}
+<md-icon-button onclick={{this.onClick}}>
+{{yield}}
+</md-icon-button>
+{{else}}
+<md-filled-button class="md-button" onclick={{this.onClick}}>
+    {{yield}}
+</md-filled-button>
+{{/if}}
