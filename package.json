@@ -34,7 +34,7 @@
     "ember-auto-import": "2.7.3",
     "@material/drawer": "^14.0.0",
     "@material/top-app-bar": "^14.0.0",
-    "@material/web": "^1.3.0",
+    "@material/web": "^1.3.0"
    
   },
   "devDependencies": {
