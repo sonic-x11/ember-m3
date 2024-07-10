@@ -7,7 +7,7 @@ import '@material/web/iconbutton/filled-tonal-icon-button.js';
 import '@material/web/iconbutton/icon-button.js';
 import '@material/web/iconbutton/outlined-icon-button.js';
 import { action } from '@ember/object';
-export default class M3ButtonComponent extends Component {
+export default class M3ButtonPodComponent extends Component {
   @action
   onClick(event) {
     if (this.args?.onClick) {
